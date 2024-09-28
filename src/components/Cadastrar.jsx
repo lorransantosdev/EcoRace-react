@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import InputField from '../components/InputField'; // Importando o novo componente
+import InputField from '../components/InputField';
 
 export default function Cadastrar() {
   const [nome, setNome] = useState('');
@@ -36,7 +36,7 @@ export default function Cadastrar() {
   };
 
   return (
-    <div className='flex items-center flex-col w-full h-screen md:h-auto bg-custom-radial relative lg:px-20 lg:py-20 lg:gap-5 md:px-40 md:py-30 md:gap-5 px-10 py-20'>
+    <div className='flex items-center lg:justify-center justify-start flex-col w-full h-screen bg-custom-radial relative lg:px-20 lg:py-20 lg:gap-5 md:px-40 md:py-30 md:gap-5 px-10 py-20'>
       <h2 className='text-white font-russo text-4xl sm:text-5xl md:text-6xl'>Cadastro</h2>
       <p className='text-primary-color mt-4'>{message}</p>
 
