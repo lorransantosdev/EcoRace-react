@@ -10,7 +10,5 @@ export default function Banner({ children }){
                 {children}
             </section>
         </>
-    )
-
-
+    );
 }

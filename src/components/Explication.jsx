@@ -6,5 +6,5 @@ export default function Explication({ style, text }) {
                 {text}
             </h2>
         </>
-    )
+    );
 }

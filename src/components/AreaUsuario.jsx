@@ -61,7 +61,7 @@ export default function AreaUsuario({ sectionStyle, text, style }) {
 
       localStorage.setItem(emailLogado, JSON.stringify(dadosAtualizados));
       console.log(`Novo saldo de Carbons Coins: ${novoSaldo}`);
-    }
+    };
   };
 
   return (

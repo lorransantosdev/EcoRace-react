@@ -16,5 +16,5 @@ export default function InputField({ label, type, value, onChange, placeholder, 
             />
         </div>
         </>
-    )
+    );
 }

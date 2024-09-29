@@ -7,6 +7,5 @@ export default function PageNotFound(){
                 Voltar para a paágina inicial
             </a>
         </>
-    )
-
+    );
 }

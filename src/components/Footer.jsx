@@ -5,7 +5,7 @@ export default function Footer() {
 
   const styleTitles = "text-2xl font-roboto mb-4";
   const styleDescriptions = "font-roboto text-gray-100";
-  const styleLink = "hover:underline font-roboto text-gray-400"
+  const styleLink = "hover:underline font-roboto text-gray-400";
 
   return (
     <footer className="bg-black text-white py-8">
@@ -60,7 +60,7 @@ export default function Footer() {
             Reservados
           </p>
         </div>
-        </div>
+      </div>
     </footer>
   );
 }

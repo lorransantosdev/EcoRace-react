@@ -6,5 +6,5 @@ export default function Title({ style, text}){
                 {text}
             </h1>
         </>
-    )
+    );
 }

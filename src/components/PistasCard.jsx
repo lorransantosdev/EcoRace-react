@@ -36,5 +36,5 @@ export default function PistasCard({ style, text, pistas }){
                 </div>    
             </div>
         </>
-    )
+    );
 }

@@ -12,7 +12,7 @@ export default function ConteudoPrincipal({ logos, textButton, sectionStyle, tit
     const titleHome = [
         "text-white font-russo text-center sm:text-4xl text-2xl sm:pb-5 pb-3",
         "Mergulhe no universo das Corridas Sustentáveis"
-    ]
+    ];
 
     const aboutLogos = [
         {
@@ -93,7 +93,7 @@ export default function ConteudoPrincipal({ logos, textButton, sectionStyle, tit
         link: '/login',
         textButton: 'Participe Agora'
         },
-    ]  
+    ];
 
     const sectionWithImage = 'flex flex-col lg:flex-row w-full bg-black sm:px-32 sm:py-30 px-10 py-20 gap-10'
 
@@ -103,20 +103,20 @@ export default function ConteudoPrincipal({ logos, textButton, sectionStyle, tit
         altImg: "Imagem do carro de fórmula E",
         style: "w-full rounded-3xl"
         }
-    ]
+    ];
 
     const titleSectionImage =
         {
         style: "text-[#0000ff] font-russo lg:text-4xl md:text-3xl sm:text-2xl text-2xl lg:py-5 md:py-4 sm:py-3 py-2",
         text: "Prepare-se para a Corrida!"
-        }
+        };
 
     const buttonPlay = [
         {
         style: "bg-[#0000ff] text-white font-roboto font-bold py-3 px-6 rounded-full hover:bg-opacity-80 transition shadow-[0_0_15px_#0000ff] hover:shadow-[0_0px_20px_#0000ff] mt-5 lg:mt-0",
         text: "Participe Agora"
         }
-    ]
+    ];
 
     const textsSectionImage = [
         {
@@ -125,7 +125,7 @@ export default function ConteudoPrincipal({ logos, textButton, sectionStyle, tit
         {
         text: "Monte seu carrinho, escolha a pista e dê o seu melhor. Quanto mais você corre, mais pontos ganha. Pronto para começar?"
         }
-    ]
+    ];
 
     const imageEcoRace = [
         {
@@ -133,15 +133,15 @@ export default function ConteudoPrincipal({ logos, textButton, sectionStyle, tit
         altImg: "Logotipo da Eco Race",
         style: "w-full rounded-3xl"
         }
-    ]
+    ];
 
     const titleSectionLogo =
         {
         style: "text-white font-russo text-center lg:text-4xl md:text-3xl sm:text-2xl text-2xl lg:py-5 md:py-4 sm:py-3 py-2",
         text: "Eco Race, corra para um futuro melhor!"
-        }
+        };
 
-    const sectionLogo = 'flex flex-col items-center justify-center w-full bg-black sm:px-32 sm:py-30 gap-10 px-10 py-20'
+    const sectionLogo = 'flex flex-col items-center justify-center w-full bg-black sm:px-32 sm:py-30 gap-10 px-10 py-20';
     
     return(
         <>
@@ -199,5 +199,5 @@ export default function ConteudoPrincipal({ logos, textButton, sectionStyle, tit
                 </div>
             </Sections>
         </>
-    )
+    );
 }
