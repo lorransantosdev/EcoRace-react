@@ -1,9 +1,10 @@
 # Eco Race - Projeto Sustentável de Corrida com Simulação em Miniatura 🚗🌱
 
 ## Desenvolvedores:
-- **Enzo Santos**
-- **Lorran Santos**
-- **Kathe Oliveira**
+- **Gabriel Caetano - RM: 557582**
+- **Leonardo Baldaia - RM: 557416**
+- **Lorran dos Santos - RM: 558982**
+- **Maria Clara - RM: 557478**
 
 ---
 
@@ -22,7 +23,7 @@ O **Eco Race** é um projeto interativo que permite aos usuários **registrar e 
 - **Frontend:**
   - React.js
   - Tailwind CSS
-  - Vite.js (como build tool)
+  - Vite.js 
   - JavaScript
 - **Backend:**
   - Manipulação de dados através do `localStorage` do navegador.
