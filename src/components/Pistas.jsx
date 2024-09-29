@@ -2,8 +2,8 @@ export default function Pistas({ dadosPistas }) {
     return (
       <>
         {dadosPistas.map((pistas, index) => (
-          <div key={index} className="flex flex-col md:flex-row gap-5 bg-gray-300 bg-opacity-50 backdrop-blur-lg rounded-3xl p-4">
-            <div className="md:w-1/5 lg:w-2/5 w-full">
+          <div key={index} className="flex flex-col md:flex-row items-center gap-5 bg-gray-300 bg-opacity-50 backdrop-blur-lg rounded-3xl p-4">
+            <div className="md:w-1/5 lg:w-2/6 w-full">
               <img src={pistas.img} alt={pistas.alt} className="rounded-3xl" />
             </div>
   

@@ -19,7 +19,7 @@ export default function PistasCard({ style, text, pistas }){
         {
         img: "/circuite-mexico.svg",
         alt: "Imagem do circuito de Mexico",
-        name: "Circuito de Mexico - 1 volta",
+        name: "Circuito do Mexico - 1 volta",
         time: "Tempo record: 6,70 s",
         extetion: "Extensão: 210,24 m"
         },
