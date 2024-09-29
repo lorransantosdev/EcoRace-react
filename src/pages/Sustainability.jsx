@@ -44,7 +44,7 @@ export default function Sustainability() {
 
   const imageEcoRace = [
     {
-      search: "/src/assets/icon-eco-race.svg",
+      search: "/icon-eco-race.svg",
       altImg: "Logotipo da Eco Race",
       style: "w-full rounded-3xl"
     }
