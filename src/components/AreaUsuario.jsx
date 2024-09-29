@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Carbons from "./Carbons";
 import Contador from "./Contador";
 import Sections from "./Sections";
 import Explication from "./Explication";
@@ -62,12 +61,12 @@ export default function AreaUsuario({ sectionStyle, text, style }) {
 
       localStorage.setItem(emailLogado, JSON.stringify(dadosAtualizados));
       console.log(`Novo saldo de Carbons Coins: ${novoSaldo}`);
-    }
+    };
   };
 
   return (
     <Sections sectionStyle={forSection}>
-      <div className="w-full flex flex-col gap-5 sm:flex-row justify-between items-start sm:items-center">
+      <div className="w-full flex flex-col md:gap-5 gap-10 sm:flex-row justify-between items-start">
         <div>
           <h2 className="text-white w-full font-russo lg:text-4xl md:text-3xl sm:text-2xl text-2xl lg:pb-5 md:py-4 sm:py-3 py-2">
             Bora correr piloto, <span className="text-primary-color">{nome}</span>!
@@ -75,10 +74,18 @@ export default function AreaUsuario({ sectionStyle, text, style }) {
           <Explication style={textAndStyleExplication.style} text={textAndStyleExplication.text} />
         </div>
 
-        <div>
-          <p className="text-white font-russo lg:text-2xl md:text-xl sm:text-lg text-lg">
+        <div className="flex flex-col gap-5">
+          <p className="text-white font-russo lg:text-2xl md:text-xl sm:text-lg text-sm">
             Saldo Carbons Coins: <span className="text-primary-color">{carbonsCoins.toFixed(2)}</span> pts
           </p>
+          <button 
+            type="button" 
+            onClick={() => window.open("https://www.fiaformulae.com/pt-br", "_blank")} 
+
+            className='w-2/3 md:w-full bg-red-700 text-white lg:text-1xl md:text-xl sm:text-lg text-sm font-bold rounded-3xl border-red-700 hover:bg-white hover:text-red-700 border-2 sm:py-3 sm:px-5 md:py-4 md:px-6 px-0 py-2 shadow-[0_0_10px_#b91c1c] hover:shadow-[0_0_15px_#b91c1c] transition duration-500 ease-in-out'>
+              
+            Trocar Carbons
+          </button>
         </div>
       </div>
 

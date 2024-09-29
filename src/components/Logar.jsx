@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import InputField from '../components/InputField'; // Importando o novo componente
+import { useNavigate, Link } from 'react-router-dom';
+import InputField from '../components/InputField';
 
 export default function Logar() {
   const [email, setEmail] = useState('');
@@ -15,14 +15,14 @@ export default function Logar() {
     if (!email || !senha) {
       setMessage('Preencha todos os campos.');
       return;
-    }
+    };
 
     const historicoUsuarios = localStorage.getItem(email);
 
     if (!historicoUsuarios) {
       setMessage('Usuário não encontrado.');
       return;
-    }
+    };
 
     const { senha: historicoUsuariosSenha } = JSON.parse(historicoUsuarios);
 
@@ -33,7 +33,7 @@ export default function Logar() {
 
     } else {
       setMessage('Senha incorreta.');
-    }
+    };
 
     setSenha('');
     setEmail('');
@@ -69,9 +69,7 @@ export default function Logar() {
           Entrar
         </button>
       </form>
-
       <p className='text-white border-b-2 border-white mt-4'><Link to="/cadastro">Cadastre-se por aqui.</Link></p>
- 
     </div>
   );
 }

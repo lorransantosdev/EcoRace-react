@@ -6,5 +6,5 @@ export default function Sections( {children, sectionStyle } ){
                 {children}
             </section>
         </>
-    )
+    );
 }

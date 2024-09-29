@@ -15,13 +15,13 @@ export default function Cadastrar() {
     if (!nome || !email || !senha) {
       setMessage('Preencha todos os campos.');
       return;
-    }
+    };
 
     const historicoUsuarios = localStorage.getItem(email);
     if (historicoUsuarios) {
       setMessage("Usuário já cadastrado.");
       return;
-    }
+    };
 
     localStorage.setItem(email, JSON.stringify({ nome, email, senha }));
     localStorage.setItem('email', email);

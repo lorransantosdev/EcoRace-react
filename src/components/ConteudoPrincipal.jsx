@@ -1,4 +1,5 @@
 import Banner from "./Banner";
+import BuildCard from "./BuildCard";
 import ButtonPlay from "./ButtonPlay";
 import Description from "./Description";
 import LogoImagens from "./LogoImages";
@@ -6,12 +7,12 @@ import Sections from "./Sections";
 import Subtitle from "./Subtitle";
 import Title from "./Title";
 
-export default function ConteudoPrincipal({ logos, textButton, sectionStyle, title, text, description }){
+export default function ConteudoPrincipal({ logos, textButton, sectionStyle, title, text, description, advantagens }){
 
     const titleHome = [
         "text-white font-russo text-center sm:text-4xl text-2xl sm:pb-5 pb-3",
         "Mergulhe no universo das Corridas Sustentáveis"
-    ]
+    ];
 
     const aboutLogos = [
         {
@@ -39,7 +40,7 @@ export default function ConteudoPrincipal({ logos, textButton, sectionStyle, tit
 
     const textsSubtitle = [
         'Carros Sustentáveis',
-        'Construa e Corra!'
+        'Construa, Corra e Conquiste!'
     ];
 
     const textAndStyleDescription = [
@@ -64,9 +65,83 @@ export default function ConteudoPrincipal({ logos, textButton, sectionStyle, tit
         {
         search: "/graphic.png",
         altImg: "Gráfico Emissão de CO2",
-        style: ""
         }
     ];
+
+    const advantagensBuild = [
+        {
+        title: 'Monte Seu Próprio Carrinho de Fórmula E',
+        text: 'Descubra como é fácil personalizar seu carrinho e torná-lo único! Escolha peças, monte a estrutura e ajuste cada detalhe para alcançar o desempenho ideal nas pistas.',
+        link: '/manual',
+        textButton: 'Comece a Montar'
+        },
+        {
+        title: 'Marque Seus Tempos e Compare',
+        text: 'Monitore suas voltas e compare com outros pilotos. Desafie-se a bater os melhores tempos e suba no ranking!',
+        link: '/login',
+        textButton: 'Bata Records'
+        },
+        {
+        title: 'Benefícios da Tecnologia Sustentável',
+        text: 'Utilize componentes reutilizáveis e contribua para um futuro mais verde enquanto se diverte com a engenharia e inovação tecnológica.',
+        link: '/',
+        textButton: 'Saiba Mais'
+        },
+        {
+        title: 'Vantagens de Participar do Eco Race',
+        text: 'Ganhe Carbons Coins com cada corrida e use suas moedas para adquirir novas peças, garantindo desempenho superior nas pistas!',
+        link: '/login',
+        textButton: 'Participe Agora'
+        },
+    ];
+
+    const sectionWithImage = 'flex flex-col lg:flex-row w-full bg-black sm:px-32 sm:py-30 px-10 py-20 gap-10'
+
+    const imageSection = [
+        {
+        search: "/car-formula-e.png",
+        altImg: "Imagem do carro de fórmula E",
+        style: "w-full rounded-3xl"
+        }
+    ];
+
+    const titleSectionImage =
+        {
+        style: "text-[#0000ff] font-russo lg:text-4xl md:text-3xl sm:text-2xl text-2xl lg:py-5 md:py-4 sm:py-3 py-2",
+        text: "Prepare-se para a Corrida!"
+        };
+
+    const buttonPlay = [
+        {
+        style: "bg-[#0000ff] text-white font-roboto font-bold py-3 px-6 rounded-full hover:bg-opacity-80 transition shadow-[0_0_15px_#0000ff] hover:shadow-[0_0px_20px_#0000ff] mt-5 lg:mt-0",
+        text: "Participe Agora"
+        }
+    ];
+
+    const textsSectionImage = [
+        {
+        text: "Teste suas habilidades e desafie seus limites. Corra, acumule pontos e compare seu desempenho com outros pilotos!"
+        },
+        {
+        text: "Monte seu carrinho, escolha a pista e dê o seu melhor. Quanto mais você corre, mais pontos ganha. Pronto para começar?"
+        }
+    ];
+
+    const imageEcoRace = [
+        {
+        search: "icon-eco-race.svg",
+        altImg: "Logotipo da Eco Race",
+        style: "w-full rounded-3xl"
+        }
+    ];
+
+    const titleSectionLogo =
+        {
+        style: "text-white font-russo text-center lg:text-4xl md:text-3xl sm:text-2xl text-2xl lg:py-5 md:py-4 sm:py-3 py-2",
+        text: "Eco Race, corra para um futuro melhor!"
+        };
+
+    const sectionLogo = 'flex flex-col items-center justify-center w-full bg-black sm:px-32 sm:py-30 gap-10 px-10 py-20';
     
     return(
         <>
@@ -96,11 +171,33 @@ export default function ConteudoPrincipal({ logos, textButton, sectionStyle, tit
                 <div className="w-full text-center">
                     <Subtitle text={textsSubtitle[1]}/>
                 </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-10 py-10">
+                    <BuildCard advantagen={advantagensBuild}/>
+                </div>
             </Sections>
 
-            <Sections>
-                
+            <Sections sectionStyle={sectionWithImage}>
+                <div className="w-full lg:w-1/2">
+                    <LogoImagens logotipos={imageSection}/>
+                </div>
+
+                <div className="lg:w-1/2 w-full text-center lg:text-left flex flex-col gap-4 lg:gap-6">
+                    <Title style={titleSectionImage.style} text={titleSectionImage.text}/>
+                    <Description forDescription={textsSectionImage}/>
+                    <ButtonPlay playButton={buttonPlay}/>
+                </div>
+
+            </Sections>
+
+            <Sections sectionStyle={sectionLogo}>
+                <div className="sm:w-1/5 w-1/3">
+                    <LogoImagens logotipos={imageEcoRace}/>
+                </div>
+
+                <div>
+                    <Title style={titleSectionLogo.style} text={titleSectionLogo.text}/>
+                </div>
             </Sections>
         </>
-    )
+    );
 }
