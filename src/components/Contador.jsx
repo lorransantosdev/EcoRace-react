@@ -70,25 +70,31 @@ export default function Contador({ onFinish }) {
   };
 
   return (
-    <div className=" flex flex-col items-center gap-10">
-      <div>
-        <Explication style={textAndStyleExplication.style} text={textAndStyleExplication.text}/>
+    <div className="flex flex-col justify-between items-center h-full gap-10 sm:gap-5">
+      <div className="flex flex-col gap-10">
+        <Explication style={textAndStyleExplication.style} text={textAndStyleExplication.text} />
+        <div className="flex flex-col items-center gap-5">  
+          <div className="bg-white rounded-3xl font-russo lg:text-1xl md:text-xl sm:text-lg text-sm px-5 py-2">
+            <h3 id="time">00:00</h3>
+          </div>
+
+          <div className="flex gap-5">
+            <button onClick={start} className="bg-[#0000ff] text-white lg:text-1xl md:text-xl sm:text-lg text-sm font-bold rounded-3xl border-[#0000ff] hover:bg-white hover:text-[#0000ff] border-2 px-4 py-2 sm:py-3 sm:px-5 md:py-4 md:px-6 shadow-[0_0_10px_#0000ff] hover:shadow-[0_0px_15px_#0000ff] transition duration-500 ease-in-out">
+              Start
+            </button>
+
+            <button onClick={finish} className="bg-red-700 text-white lg:text-1xl md:text-xl sm:text-lg text-sm font-bold rounded-3xl border-red-700 hover:bg-white hover:text-red-700 border-2 px-4 py-2 sm:py-3 sm:px-5 md:py-4 md:px-6 shadow-[0_0_10px_#b91c1c] hover:shadow-[0_0_15px_#b91c1c] transition duration-500 ease-in-out">
+              Finish
+            </button>
+          </div>
+        </div>
       </div>  
-      <div className="bg-white rounded-3xl font-russo lg:text-1xl md:text-xl sm:text-lg text-sm px-5 py-2" >
-          <h3 id="time">
-            00:00
-          </h3>
+      
+      <div className="bg-slate-700 w-full lg:w-full md:py-20 py-5 px-5 rounded-3xl text-center">  
+        <h3 id="totalSeconds" className="text-white font-russo sm:text-xl text-sm">
+          Seu tempo nas pistas: 0 s
+        </h3>
       </div>
-      <div className="flex gap-5">
-          <button onClick={start} className="bg-[#0000ff] text-white lg:text-1xl md:text-xl sm:text-lg text-sm font-bold rounded-3xl border-[#0000ff] hover:bg-white hover:text-[#0000ff] border-2 px-4 py-2 sm:py-3 sm:px-5 md:py-4 md:px-6 shadow-[0_0_10px_#0000ff] hover:shadow-[0_0px_15px_#0000ff] transition duration-500 ease-in-out">
-          Start</button>
-
-          <button onClick={finish} className="bg-red-700 text-white lg:text-1xl md:text-xl sm:text-lg text-sm font-bold rounded-3xl border-red-700 hover:bg-white hover:text-red-700 border-2 px-4 py-2 sm:py-3 sm:px-5 md:py-4 md:px-6 shadow-[0_0_10px_#b91c1c] hover:shadow-[0_0_15px_#b91c1c] transition duration-500 ease-in-out">Finish</button>
-      </div>
-
-      <h3 id="totalSeconds" className="text-white font-roboto sm:text-xl text-sme">
-        Seu tempo nas pistas: 0 s
-      </h3>
     </div>
   );
 }

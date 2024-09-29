@@ -14,7 +14,7 @@ export default function PistasCard({ style, text, pistas }){
         alt: "Imagem do circuito de Monaco",
         name: "Circuito de Monaco - 1 volta",
         time: "Tempo record: 9,64 s",
-        extetion: "Extensão: 266,96 m"
+        extetion: "Extensão: 266,96 m",
         },
         {
         img: "/circuite-mexico.svg",
@@ -31,8 +31,9 @@ export default function PistasCard({ style, text, pistas }){
                 <div className="bg-[#0000ff] bg-opacity-50 backdrop-blur-lg rounded-3xl p-4 shadow-lg inline-block text-center">
                     <Explication style={textAndStyleExplication.style} text={textAndStyleExplication.text} />
                 </div>
-
-                <Pistas dadosPistas={pistasDados}/>
+                <div className="flex flex-col gap-5 bg-gray-700 p-6 rounded-3xl">
+                    <Pistas dadosPistas={pistasDados}/>
+                </div>    
             </div>
         </>
     )
