@@ -1,4 +1,5 @@
 import Banner from "./Banner";
+import BuildCard from "./BuildCard";
 import ButtonPlay from "./ButtonPlay";
 import Description from "./Description";
 import LogoImagens from "./LogoImages";
@@ -6,7 +7,7 @@ import Sections from "./Sections";
 import Subtitle from "./Subtitle";
 import Title from "./Title";
 
-export default function ConteudoPrincipal({ logos, textButton, sectionStyle, title, text, description }){
+export default function ConteudoPrincipal({ logos, textButton, sectionStyle, title, text, description, advantagens }){
 
     const titleHome = [
         "text-white font-russo text-center sm:text-4xl text-2xl sm:pb-5 pb-3",
@@ -39,7 +40,7 @@ export default function ConteudoPrincipal({ logos, textButton, sectionStyle, tit
 
     const textsSubtitle = [
         'Carros Sustentáveis',
-        'Construa e Corra!'
+        'Construa, Corra e Conquiste!'
     ];
 
     const textAndStyleDescription = [
@@ -67,6 +68,33 @@ export default function ConteudoPrincipal({ logos, textButton, sectionStyle, tit
         style: ""
         }
     ];
+
+    const advantagensBuild = [
+        {
+        title: 'Monte Seu Próprio Carrinho de Fórmula E',
+        text: 'Descubra como é fácil personalizar seu carrinho e torná-lo único! Escolha peças, monte a estrutura e ajuste cada detalhe para alcançar o desempenho ideal nas pistas.',
+        link: '/manual',
+        textButton: 'Comece a Montar'
+        },
+        {
+        title: 'Marque Seus Tempos e Compare',
+        text: 'Monitore suas voltas e compare com outros pilotos. Desafie-se a bater os melhores tempos e suba no ranking!',
+        link: '/login',
+        textButton: 'Bata Records'
+        },
+        {
+        title: 'Benefícios da Tecnologia Sustentável',
+        text: 'Utilize componentes reutilizáveis e contribua para um futuro mais verde enquanto se diverte com a engenharia e inovação tecnológica.',
+        link: '/',
+        textButton: 'Saiba Mais'
+        },
+        {
+        title: 'Vantagens de Participar do Eco Race',
+        text: 'Ganhe Carbons Coins com cada corrida e use suas moedas para adquirir novas peças, garantindo desempenho superior nas pistas!',
+        link: '/login',
+        textButton: 'Participe Agora'
+        },
+    ]
     
     return(
         <>
@@ -96,10 +124,9 @@ export default function ConteudoPrincipal({ logos, textButton, sectionStyle, tit
                 <div className="w-full text-center">
                     <Subtitle text={textsSubtitle[1]}/>
                 </div>
-            </Sections>
-
-            <Sections>
-                
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-10 py-10">
+                    <BuildCard advantagen={advantagensBuild}/>
+                </div>
             </Sections>
         </>
     )
