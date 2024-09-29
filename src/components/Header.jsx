@@ -59,6 +59,11 @@ export default function Header({ textButton }) {
               Manual
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/sustainability" className="hover:text-primary-color" onClick={() => setIsMobileMenuOpen(false)}>
+              Sustentabilidade
+            </NavLink>
+          </li>
 
           <li className="lg:hidden text-center">
             <ButtonPlay playButton={textAndStyleButtonPlay} />

@@ -11,6 +11,7 @@ import Login from './pages/Login.jsx';
 import Logado from './pages/Logado.jsx';
 import ConteudoPrincipal from './components/ConteudoPrincipal.jsx';
 import Manual from './pages/Manual.jsx';
+import Sustainability from './pages/Sustainability.jsx';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       { index: true, element: <ConteudoPrincipal /> },
       { path: '/manual', element: <Manual /> },
       { path: '/cadastro', element: <Cadastro /> },
+      { path: '/sustainability', element: <Sustainability /> },
       { path: '/login', element: <Login /> },
       { path: '/login/:id', element: <Logado /> },
       { path: '*', element: <PageNotFound /> }

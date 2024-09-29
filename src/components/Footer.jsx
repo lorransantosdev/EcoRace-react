@@ -35,13 +35,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="" className={styleLink}>
-                  Pistas
+                <Link to="/sustainability" className={styleLink}>
+                  Sustentabilidade
                 </Link>
               </li>
               <li>
-                <Link to="#contact" className={styleLink}>
-                  Contato
+                <Link to="/login" className={styleLink}>
+                  Login
                 </Link>
               </li>
             </ul>
