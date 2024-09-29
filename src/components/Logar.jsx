@@ -15,14 +15,14 @@ export default function Logar() {
     if (!email || !senha) {
       setMessage('Preencha todos os campos.');
       return;
-    }
+    };
 
     const historicoUsuarios = localStorage.getItem(email);
 
     if (!historicoUsuarios) {
       setMessage('Usuário não encontrado.');
       return;
-    }
+    };
 
     const { senha: historicoUsuariosSenha } = JSON.parse(historicoUsuarios);
 
@@ -33,7 +33,7 @@ export default function Logar() {
 
     } else {
       setMessage('Senha incorreta.');
-    }
+    };
 
     setSenha('');
     setEmail('');

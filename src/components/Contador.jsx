@@ -6,7 +6,7 @@ export default function Contador({ onFinish }) {
   const textAndStyleExplication = {
     style: "text-white font-roboto sm:text-xl text-sm",
     text: "Marque o seu tempo em cada corrida, clique em Start e corra!",
-  }
+  };
 
   let seconds = 0;
   let minutes = 0;
@@ -14,7 +14,7 @@ export default function Contador({ onFinish }) {
 
   const start = () => {
     interval = setInterval(time, 1000);
-    return
+    return;
   };
 
   const time = () => {
@@ -61,7 +61,7 @@ export default function Contador({ onFinish }) {
       }
     } else {
       console.log("Nenhum usuário logado.");
-    }
+    };
 
     seconds = 0;
     minutes = 0;

@@ -1,6 +1,5 @@
 import Sections from "../components/Sections";
 import Title from "../components/Title";
-import Subtitle from "../components/Subtitle";
 import LinksManual from "../components/LinksManual";
 import Explication from "../components/Explication";
 
@@ -12,7 +11,7 @@ export default function Manual({ text, style }) {
     text1: "Pronto para acelerar?",
     style2: "text-white font-roboto md:text-xl text-sm pr-5",
     text2: "Todas as peças e links para montar o carrinho dos seus sonhos. Comece agora!"
-    }
+    };
 
 
   const titleManual = {

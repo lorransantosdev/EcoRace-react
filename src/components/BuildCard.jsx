@@ -1,8 +1,8 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 export default function BuildCard({ advantagen }){
 
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     return(
         <>
@@ -20,5 +20,5 @@ export default function BuildCard({ advantagen }){
             ))
         }
         </>
-    )
+    );
 }

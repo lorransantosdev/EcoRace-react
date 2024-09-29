@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 export default function ButtonPlay( { playButton } ){
 
@@ -9,14 +9,10 @@ export default function ButtonPlay( { playButton } ){
         {
             playButton.map(textButton =>(
                 <button onClick={() => navigate('/login')} className={textButton.style}>
-                
-                {textButton.text}
-
+                    {textButton.text}
                 </button>
             ))
         }
         </>
-
-
-    )
+    );
 }
