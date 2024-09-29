@@ -70,9 +70,8 @@ export default function Logar() {
         </button>
       </form>
 
-      <a href="/cadastro" className='text-white border-b-2 border-white mt-4'>
-        Cadastre-se por aqui.
-      </a>
+      <p className='text-white border-b-2 border-white mt-4'><Link to="/cadastro">Cadastre-se por aqui.</Link></p>
+ 
     </div>
   );
 }
