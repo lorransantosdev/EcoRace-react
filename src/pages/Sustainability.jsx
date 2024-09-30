@@ -27,10 +27,10 @@ export default function Sustainability() {
 
   const descriptionCarbon = [
     {
-      text: "Carbons Coins é um sistema de pontuação que recompensa os pilotos virtuais por suas habilidades e pelo tempo que passam competindo de maneira sustentável. A cada corrida realizada, o piloto acumula pontos com base em seu desempenho e no tempo total da corrida."
+      text: "Carbons Coins é um sistema de pontuação que recompensa os pilotos recebem após marcar seu tempo nas corridas com seu carrinho e pelas suas habilidades competindo de maneira sustentável. A cada corrida realizada, o piloto acumula pontos com base em seu desempenho e no tempo total da corrida."
     },
     {
-      text: "Esses pontos podem ser trocados por prêmios exclusivos, como acessórios para o seu carrinho, upgrades, ou até mesmo descontos em produtos sustentáveis. O objetivo é incentivar a competitividade saudável e a conscientização ambiental, recompensando a participação ativa e o aprendizado sobre práticas ecológicas no automobilismo."
+      text: "Esses pontos podem ser trocados por prêmios exclusivos, como roupas, upgrades, ou até mesmo descontos ingressos para assistir uma corrida real da Fórmula E. O objetivo é incentivar a competitividade saudável e a conscientização ambiental, recompensando a participação ativa e o aprendizado sobre práticas ecológicas no automobilismo."
     }
   ];
 
