@@ -2,6 +2,7 @@ import Sections from "../components/Sections";
 import Title from "../components/Title";
 import LinksManual from "../components/LinksManual";
 import Explication from "../components/Explication";
+import Maps from "../components/Maps";
 
 export default function Manual({ text, style }) {
 
@@ -84,14 +85,8 @@ export default function Manual({ text, style }) {
           Agora que você já tem tudo, confira os locais mais próximos de você para fazer a impressão 3D.
         </h3>
 
-        <div
-          className="group flex flex-col bg-[#0000ff] p-4 rounded-3xl border-2 border- shadow-lg transform transition-transform duration-300 hover:scale-105 hover:bg-gray-50 cursor-pointer"
-          onClick={() => window.open("https://www.google.com/maps/search/impress%C3%A3o+3d+perto+de+mim/@-23.5459301,-46.6566483,14z?", "_blank")}
-        >
-          <p className="sm:text-lg text-sm text-center font-roboto text-white group-hover:text-[#0000ff] transition-colors duration-300">
-            Encontrar
-          </p>
-        </div>
+        <Maps/>
+
       </div>
     </Sections>
   );
